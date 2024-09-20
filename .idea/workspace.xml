@@ -5,46 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1053de66-27ea-460c-b305-f505f6c3b84c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/Entity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-game.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/GamePanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/KeyHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/Main/GamePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/Main/KeyHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/Main/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/entity/Entity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/entity/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/gym-game.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/res/a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/res/player/down1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/res/player/down2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/res/player/left1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/res/player/left2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/res/player/right1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/res/player/right2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/res/player/up1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gym-game/res/player/up2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/player/down1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/player/down2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/player/left1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/player/left2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/player/right1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/player/right2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/player/up1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/player/up2.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
