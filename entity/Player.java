@@ -34,7 +34,7 @@ public class Player extends Entity{
     public void setDefaultValues() {
         worldX = gp.tileSize * 23;
         worldY = gp.tileSize * 21;
-        speed = 10;                  // speed 4
+        speed = 6;                  // speed 4
         directioin = "down";
     }
 
@@ -107,14 +107,21 @@ public class Player extends Entity{
 
             switch (objectName) {
                 case "Key":
+                    gp.playSoundEffect(1);
                     hasKey++;
                     gp.objects[index] = null;
                     break;
                 case "Door":
                     if (hasKey > 0) {
+                        gp.playSoundEffect(3);
                         gp.objects[index] = null;
                         hasKey--;
                     }
+                    break;
+                case "Boots":
+                    gp.playSoundEffect(2);
+                    speed += 2;
+                    gp.objects[index] = null;
                     break;
             }
         }

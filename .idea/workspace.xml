@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1053de66-27ea-460c-b305-f505f6c3b84c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/CollisionChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/AssetSetter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gym-game/entity/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gym-game/entity/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gym-game/main/AssetSetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gym-game/main/AssetSetter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gym-game/main/GamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gym-game/main/GamePanel.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
