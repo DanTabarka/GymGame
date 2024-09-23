@@ -12,9 +12,9 @@ public class Player extends Entity{
 
     GamePanel gp;
     KeyHandler keyHandler;
-
     public final int screenX;
     public final int screenY;
+    int hasKey = 0;
 
     public Player(GamePanel gp, KeyHandler keyHandler) {
         this.gp = gp;
@@ -24,6 +24,8 @@ public class Player extends Entity{
         screenY = gp.screenHeight/2 - gp.tileSize/2;
 
         solidArea = new Rectangle(12, 16, gp.tileSize - 24, gp.tileSize - 16);
+        solidAreaDefaultX = solidArea.x;
+        solidAreaDefaultY = solidArea.y;
 
         setDefaultValues();
         getPlayerImage();
@@ -32,7 +34,7 @@ public class Player extends Entity{
     public void setDefaultValues() {
         worldX = gp.tileSize * 23;
         worldY = gp.tileSize * 21;
-        speed = 4;                  // speed 4
+        speed = 10;                  // speed 4
         directioin = "down";
     }
 
@@ -67,8 +69,12 @@ public class Player extends Entity{
                 directioin = "right";
             }
 
+            // CHECK TILE COLLISION
             collisionOn = false;
             gp.collisionChecker.checkTile(this);
+            // CHECK OBJECT COLLISION
+            int objectIndex = gp.collisionChecker.checkObject(this, true);
+            pickUpObject(objectIndex);
 
             if (!collisionOn) {
                 switch (directioin) {
@@ -95,10 +101,27 @@ public class Player extends Entity{
         }
     }
 
-    public void draw(Graphics g2) {
-        // g2.setColor(Color.white);
-        // g2.fillRect(x, y, gp.tileSize, gp.tileSize);
+    public void pickUpObject(int index) {
+        if (index >= 0) {
+            String objectName = gp.objects[index].name;
 
+            switch (objectName) {
+                case "Key":
+                    hasKey++;
+                    gp.objects[index] = null;
+                    break;
+                case "Door":
+                    if (hasKey > 0) {
+                        gp.objects[index] = null;
+                        hasKey--;
+                    }
+                    break;
+            }
+        }
+
+    }
+
+    public void draw(Graphics g2) {
         BufferedImage image = null;
 
         switch(directioin) {
