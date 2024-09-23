@@ -22,20 +22,21 @@ public class GamePanel extends JPanel implements Runnable{
     // WORLD SETTINGS
     public final int maxWorldCol = 50;
     public final int maxWorldRow = 50;
-//    public final int worldWidth = tileSize * maxWorldCol;
-//    public final int worldHeight = tileSize * maxWorldRow;
 
     // FPS
     int FPS = 60;
+    public boolean gameFinished = false;
+    public double playTime = 0.0;
 
     // SYSTEM
     TileManager tileManager = new TileManager(this);
     KeyHandler keyHandler = new KeyHandler();
     Sound music = new Sound();
     Sound soundEffect = new Sound();
-    Thread gameThread;
     public CollisionChecker collisionChecker = new CollisionChecker(this);
     public AssetSetter assetSetter = new AssetSetter(this);
+    public UI ui = new UI(this);
+    Thread gameThread;
 
     // ENTITY AND OBJECTS
     public Player player = new Player(this, keyHandler);
@@ -70,7 +71,7 @@ public class GamePanel extends JPanel implements Runnable{
         double drawInterval = 1000000000/FPS;
         double nextDrawTime = System.nanoTime() + drawInterval;
 
-        while(gameThread != null) {
+        while(!gameFinished) {
 
             update();
 
@@ -83,13 +84,13 @@ public class GamePanel extends JPanel implements Runnable{
                     Thread.sleep((long) remainingTime);
                 }
                 nextDrawTime += drawInterval;
+                playTime += 1.0/FPS;
 
             } catch (InterruptedException e) {
                 System.out.println(e);
             }
-
         }
-
+        gameThread = null;      // END OF THE GAME
     }
 
     public void update() {
@@ -111,6 +112,9 @@ public class GamePanel extends JPanel implements Runnable{
         // PLAYER
         player.draw(g2);
 
+        // UI
+        ui.draw(g2);
+
         g2.dispose();
 
     }
@@ -120,7 +124,7 @@ public class GamePanel extends JPanel implements Runnable{
         music.play();
         music.loop();
     }
-    public void stopMusic(int index) {
+    public void stopMusic() {
         music.stop();
     }
     public void playSoundEffect(int index) {
